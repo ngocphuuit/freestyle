@@ -1,0 +1,23 @@
+	<html>
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+    <head>
+    <title>Example D08</title>
+    </head>
+    <body>
+    <div>x</div>
+    <div>x</div>
+    <div id="me">x</div>
+    <div>x</div>
+    <div>x</div>
+    <div>x</div>
+    <script type="text/javascript">
+    	var node;
+		node = document.getElementById('me').parentNode. .childNodes;
+		for (var i = 0, ii = node.length; i < ii; i++)
+		  if (3 !== node[i].nodeType && 'SCRIPT' !== node[i].nodeName)
+		    node[i].innerHTML += 'child';
+		}
+    </script>
+    </body>
+    </html> 

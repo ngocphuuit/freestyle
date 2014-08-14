@@ -1,0 +1,119 @@
+.wrap{
+	width: 1920px;
+	height: 1080px;
+	background: url('../images/BG.png');
+}
+.container{
+	height: 924px;
+	width: 1576px;
+	margin-right: 154px;
+	margin-left: 154px;
+	padding-top: 64px;
+}
+.header{
+	height: 115px;
+	--background: green;
+}
+.time{
+	background: url('../images/images/Menu_15.png');
+}
+.wifi{
+	background: url('../images/images/Menu_14.png');
+}
+.connect{
+	background: url('../images/images/Menu_13.png');
+}
+.logo{
+	width: 489px;
+	float: left;
+}
+.logo h1{
+	margin-left: 95px;
+	margin-top: 35px;
+}
+.login{
+	width: 1087px;
+	float: right;
+	text-align: right;
+}
+.login_header img{
+	margin-right: 25px;
+}
+.login_header h3{
+	width: 105px;
+	margin:0;
+	float: right;
+}
+.user{
+	height:95px;
+}
+.group_login{
+	float: right;
+	margin-top: 18px;
+}
+.avatar{
+	float: right;
+}
+.user_name{
+	margin-right: 40px;
+	float: left;
+}
+.content{
+	width: 1576px;
+	height: 809px;
+}
+.menu{
+	width: 489px;
+	height: 809px;
+	--background: red;
+	float: left;
+}
+.list_chanel{
+	width: 1087px;
+	height: 809px;
+	--background: blue;
+	float: left;
+}
+
+ul{
+	list-style: none;
+	margin-top: 0;
+}
+
+ul li:hover{
+	background: url('../images/bg_menu.png');
+}
+
+ul a{
+	width: 100%;
+	display: block;
+	height: 83px;
+}
+
+ul a img{
+	vertical-align: middle;
+	margin:auto 0;
+	padding-top: 10px;
+}
+
+ul li .thumb_menu{
+	width: 74px;
+	height: 100%;
+	float: left;
+}
+
+ul li .name_menu{
+	float: left;
+}
+
+.content_chanel{
+	width: 1013px;
+	height: 805px;
+	margin-left: 74px;
+}
+
+.chanel{
+	width: 337px;
+	height: 201px;
+	float: left;
+}
