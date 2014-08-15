@@ -1,0 +1,304 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto&subset=latin,vietnamese);
+@font-face {
+  font-family: 'Nexa-Bold';
+  src: url('fonts/nexa/NexaBold.otf') format("opentype");
+}
+@font-face {
+  font-family: 'Nexa-Light';
+  src: url('fonts/nexa/NexaLight.otf') format("opentype");
+}
+@font-face{
+	font-family: 'Liberation-Sans';
+	src: url('fonts/Liberation-Sans/LiberationSans-Regular.ttf') format('truetype');
+}
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif, arial;
+	
+}
+a{
+	text-decoration: none;
+}
+ul,li{
+	list-style-type: none;
+}
+.clear{
+	clear:both;
+}
+#wrapper{
+	background: url('../images/bg.png') no-repeat;
+	width: 1920px;
+	height: 1080px;
+}
+
+#head{
+	width:1540px;
+	height:175px;
+	display:block;
+	margin:0 auto;
+}
+#head .logo{
+	float:left;
+	margin:84px 0 0 50px;
+}
+.logo span{
+	font-size: 60.77px;
+	color:#ffffff;
+	font-family: "Nexa-Light", "Roboto", arial;
+}
+.logo span.strong{
+	font-family: "Nexa-Bold","Roboto", arial;
+}
+#head .user{
+	float:right;
+}
+.user .state{
+	margin:64px 0 0 0;
+	height:20px;
+	line-height: 20px;
+	display: block;
+}
+.state i{
+	width:30px;
+	height: 20px;
+	display: block;
+	float:left;
+}
+.state i.loading{
+	background:url('../images/Menu_14.png') no-repeat 0 0;	
+}
+.state i.connect{
+	background:url('../images/Menu_15.png') no-repeat 0 0;
+}
+.state span.timer{
+	float:left;
+	font-family: 'Roboto', arial, sans-serif;
+	font-size:22px;
+	color:#ffffff;
+}
+.state i, .state .timer{
+	margin-left:20px;
+}
+.timer .strong{
+	font-weight: bold;
+}
+.user .head-account{
+	height:91px;
+	line-height: 91px;
+	display: block;
+	margin-top:15px;
+}
+.user .head-account span, .user .head-account a{
+	font-family: 'Liberation-Sans', sans-serif, arial;
+	float: left;
+	height:60px;
+	line-height: 60px;
+	font-size: 26.25px;
+	color:#ffffff;
+}
+.head-account span{
+	margin-right:5px;
+}
+.head-account a{
+	font-weight: bold;
+}
+.head-account a img{
+	margin-left:35px;
+}
+#wrapper #container{
+	height:890px;
+	width:1585px;
+	margin:0 190px 0 155px;
+	position: relative;
+	overflow: hidden;
+}
+#container #wrap-container{
+	width: 2128px;
+	display: block;
+	position: absolute;
+	top:0;
+	left:0;
+}
+#menu{
+	float:left;
+}
+#menu ul{
+
+}
+#menu ul li{
+	width:365px;
+	height:80px;
+	line-height: 80px;
+	padding-left:124px;
+	background-repeat: no-repeat;
+	background-position: 53px 9px;
+	margin-bottom:5px;
+}
+#menu ul li.active{
+	background-color:rgb(249,216,196);
+}
+#menu ul li a{
+	color:#ffffff;
+	font-family: "Liberation-Sans", sans-serif, arial;
+	font-size: 40px;
+}
+#menu ul li.active a{
+	color:#c97335;
+}
+#menu ul li.favourite{
+	background-image:url('../images/icon_60x60/Icon_01.png');
+}
+#menu ul li.favourite.active{
+	background-image:url('../images/icon_60x60/Icon_02.png');
+}
+#menu ul li.film{
+	background-image:url('../images/icon_60x60/Icon_04.png');
+}
+#menu ul li.film.active{
+	background-image:url('../images/icon_60x60/Icon_05.png');
+}
+#menu ul li.television{
+	background-image:url('../images/icon_60x60/Icon_07.png');
+}
+#menu ul li.television.active{
+	background-image:url('../images/icon_60x60/Icon_08.png');	
+}
+#menu ul li.clip{
+	background-image:url('../images/icon_60x60/Icon_10.png');
+}
+#menu ul li.clip.active{
+	background-image:url('../images/icon_60x60/Icon_11.png');	
+}
+#menu ul li.women{
+	background-image:url('../images/icon_60x60/Icon_13.png');
+}
+#menu ul li.women.active{
+	background-image:url('../images/icon_60x60/Icon_14.png');	
+}
+#menu ul li.game{
+	background-image:url('../images/icon_60x60/Icon_16.png');
+}
+#menu ul li.game.active{
+	background-image:url('../images/icon_60x60/Icon_17.png');
+}
+#menu ul li.menu-app{
+	background-image:url('../images/icon_60x60/Icon_19.png');
+}
+#menu ul li.menu-app.active{
+	background-image:url('../images/icon_60x60/Icon_20.png');
+}
+#menu ul li.menu-account{
+	background-image:url('../images/icon_60x60/Icon_22.png');
+}
+#menu ul li.menu-account.active{
+	background-image:url('../images/icon_60x60/Icon_23.png');
+}
+#menu ul li.connect{
+	background-image:url('../images/icon_60x60/Icon_25.png');
+}
+#menu ul li.connect.active{
+	background-image:url('../images/icon_60x60/Icon_26.png');
+}
+#menu ul li.options{
+	background-image:url('../images/icon_60x60/Icon_28.png');
+}
+#menu ul li.options.active{
+	background-image:url('../images/icon_60x60/Icon_29.png');
+}
+#menu .line{
+	width:436px;
+	height:2px;
+	background:rgba(255,255,255,0.8);
+	margin:10px 0 10px 53px;
+}
+.wrap-container #content
+{
+	width: 1044px;
+	float:left;
+	margin-left:52px;
+	position: relative;
+}
+#content .application
+{
+	float:left;
+	width:318px;
+	height:178px;
+	margin: 0 0 10px 10px;
+	padding:10px;
+}
+#content .focus{	
+	background:url('../images/Content.png');
+}
+#content .application a img{
+	width:318px;
+}
+#content .next-button{
+	position: absolute;
+	background:url('../images/icon_60x60/Icon_31.png');
+	width:60px;
+	height:30px;
+	top:835px;
+	left:490px;
+}
+.wrap-container #slide-content{
+	width:451px;
+	float:left;
+	margin-left:72px;
+	visibility: hidden;
+}
+.info-app .activities{
+	border-bottom:solid 2px rgb(255,255,255);
+	padding-bottom:20px;
+	margin-bottom: 20px;
+}
+.activities img.thumbnail{
+	width: 453px;
+	margin-bottom:10px;
+}
+.info-app .activities p{
+	color:#ffffff;
+	margin:15px 0;
+}
+.activities p.corp{
+	font-family: "Nexa-Light","Liberation-Sans",sans-serif,arial;
+	font-size:25.21px;
+}
+.activities p.rate{
+	font-size:24px;
+	font-family: "Nexa-Light", sans-serif, arial;
+}
+p.rate i.start{
+	width:33px;
+	height:30px;
+	display: inline-block;
+	background:url('../images/start.png') no-repeat 0 0;
+}
+.activities p.intro{
+	font-size:24px;
+}
+.activities #button-install{
+	color:rgb(214,74,105);
+	font-family: "Nexa-Bold","Roboto",arial;
+	background-color:rgb(255,255,255);
+	width:226px;
+	height:53px;
+	line-height: 60px;
+	text-align: center;
+	display:block;
+	font-size:42px;
+}	
+.info-app .detail p{
+	font-family: "Roboto", "Liberation-Sans", arial, sans-serif;
+	font-size: 24px;
+	margin:15px 0;
+	color: #ffffff;
+}
+.info-app .detail p span.title{
+	width: 340px;
+	display: inline-block;
+}

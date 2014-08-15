@@ -58,7 +58,6 @@ window.onkeydown = function(evt) {
           if (global_position == 0) {
             global_position = 1;
             getalert();
-            display();
           } else{
             alert("dang o chanel list");
           };
@@ -79,11 +78,11 @@ function getalert(e){
 function menu(e,n){
   var li = document.querySelectorAll(".left_menu");
   if (e == "up") {
-    li[n].setAttribute("class","left_menu");
+    li[n].removeAttribute("class","active");
     n = n-1;
     li[n].className += " forcus";
   } else{
-    li[n].setAttribute("class","left_menu");
+    li[n].removeAttribute("class","active");
     n = n+1;
     li[n].className += " forcus";
   };
@@ -132,12 +131,7 @@ function app_leftright(e){
   }
   if (e == "right") {
     if (m != li_chanel.length-1 ) {
-      //li_chanel[m].setAttribute("class","chanel");
-      //m = m+1;
-      //li_chanel[m].className += " forcus";
       li_chanel[m].setAttribute("class","chanel");
-      movedisplay(m);
-      movedisplay1(m);
       m = m+1;
       li_chanel[m].className += " forcus";
     };
@@ -151,42 +145,4 @@ function app_leftright(e){
     };
     
   };
-}
-
-function display(){
-    var sl = document.querySelectorAll(".interval");
-    sl[0].style.display = "block";
-}
-
-function movedisplay(vt) {
-  var sl = document.querySelectorAll(".interval");
-  var left = 336*vt;
-      space = (vt*1)*336+336;
-  function frame() {
-    
-    left+=12;  // update parameters 
-    
-    sl[0].style.left = left + 'px' ;// show frame 
-
-    if (left == space)  // check finish condition
-      clearInterval(id);
-    };
-
-  var id = setInterval(frame, 1); // draw every 10ms
-}
-function movedisplay1(vt) {
-  var sl = document.querySelectorAll(".interval");
-  var top = 200*vt;
-      space = (vt*1)*200+200;
-  function frame() {
-    
-    top+=10;  // update parameters 
-    
-    sl[0].style.top = top + 'px' ;// show frame 
-
-    if (top == space)  // check finish condition
-      clearInterval(id);
-    };
-
-  var id = setInterval(frame, 1); // draw every 10ms
 }
