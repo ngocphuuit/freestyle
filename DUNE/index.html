@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script type="text/javascript" src="js/script.js"></script>
 </head>
-<body onkeypress="handleArrowKeys();" onkeypress="doSomething();">
+<body onkeydown="handleArrowKeys();">
 	<div class="wrap">
 		<div class="container">
 			<div class="header">
@@ -34,7 +34,7 @@
 			<div class="content">
 				<div class="menu">
 					<ul>
-						<li>
+						<li class="left_menu">
 						<a href="">
 							<div class="thumb_menu">
 								<img src="images/Icon 60x60/Icon_01.png" alt="">
@@ -44,7 +44,7 @@
 							</div>
 						</a>
 						</li>
-						<li>
+						<li class="left_menu">
 						<a href="">
 							<div class="thumb_menu">
 								<img src="images/Icon 60x60/Icon_04.png" alt="">
@@ -55,7 +55,7 @@
 						</a>
 						</li>
 						
-						<li>
+						<li class="left_menu">
 						<a href="">
 							<div class="thumb_menu">
 								<img src="images/Icon 60x60/Icon_07.png" alt="">
@@ -65,7 +65,7 @@
 							</div>
 						</a>
 						</li>
-						<li>
+						<li class="left_menu">
 						<a href="">
 							<div class="thumb_menu">
 								<img src="images/Icon 60x60/Icon_10.png" alt="">
@@ -75,7 +75,7 @@
 							</div>
 						</a>
 						</li>
-						<li>
+						<li class="left_menu">
 						<a href="">
 							<div class="thumb_menu">
 								<img src="images/Icon 60x60/Icon_13.png" alt="">
@@ -85,7 +85,7 @@
 							</div>
 						</a>
 						</li>
-						<li>
+						<li class="left_menu">
 						<a href="">
 							<div class="thumb_menu">
 								<img src="images/Icon 60x60/Icon_16.png" alt="">
@@ -99,6 +99,9 @@
 				</div>
 				<div class="list_chanel">
 					<div class="content_chanel">
+					<form>
+					Char: <input type="text" id="char" size="15" /> Keycode: <input type="text" id="keycode" size="15" />
+					</form>
 						<div class="chanel">
 							<img src="images/chanel/app1.jpg" alt="">
 						</div>

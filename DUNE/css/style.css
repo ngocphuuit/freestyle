@@ -80,10 +80,6 @@ ul{
 	margin-top: 0;
 }
 
-ul li:hover{
-	background: url('../images/bg_menu.png');
-}
-
 ul a{
 	width: 100%;
 	display: block;
@@ -116,4 +112,8 @@ ul li .name_menu{
 	width: 337px;
 	height: 201px;
 	float: left;
+}
+
+.forcus{
+	background: url('../images/bg_menu.png');
 }

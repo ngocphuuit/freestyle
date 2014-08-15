@@ -1,7 +1,7 @@
 	<html>
     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
     "http://www.w3.org/TR/html4/strict.dtd">
-    <head>
+    <!-- <head>
     <title>Example D08</title>
     </head>
     <body>
@@ -19,5 +19,16 @@
 		    node[i].innerHTML += 'child';
 		}
     </script>
+    </body> -->
+    <head>
+    <script type="text/javascript">
+        function GetChar (event){
+            var chCode = ('charCode' in event) ? event.charCode : event.keyCode;
+            alert ("The Unicode character code is: " + chCode);
+        }
+    </script>
+    </head>
+    <body>
+        <input size="40" value="Write a character into this field!" onkeypress="GetChar (event);"/>
     </body>
     </html> 
