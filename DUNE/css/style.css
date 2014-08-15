@@ -59,6 +59,7 @@
 	float: right;
 }
 .user_name{
+	margin-top: 20px;
 	margin-right: 40px;
 	float: left;
 }
@@ -109,17 +110,26 @@ ul li .name_menu{
 }
 
 .content_chanel{
+	position: relative;
 	width: 1013px;
 	height: 805px;
 	margin-left: 74px;
 }
 
 .chanel{
+	z-index: 10000;
 	width: 337px;
 	height: 201px;
 	float: left;
 }
-
+.interval{
+	position: absolute;
+	background: url('../images/bg_menu.png');
+	display: none;
+	width: 337px;
+	height: 201px;
+	float: left;
+}
 .chanel img{
 	padding-top: 10px;
 	padding-left: 10px;
